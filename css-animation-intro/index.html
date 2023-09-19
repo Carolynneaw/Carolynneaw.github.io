@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Animation Playground</title>
+    <style>
+      /* Add your global styles here */
+      #element1 {
+        /* Add element 1 animations here */
+        background-color: #3ed72a;
+      }
+
+      #element2 {
+        /* Add element 2 animations here */
+        background-color: #3498db;
+      }
+
+      #element3 {
+        /* Add element 3 animations here */
+        background-color: #ebfd2b;
+        animation-name: scales;
+        animation-duration: 8s;
+        animation-iteration-count: infinite;
+      }
+
+      .animated-element {
+        width: 100px;
+        height: 100px;
+        margin: 20px;
+        display: inline-flex; /* Use flex to center text vertically */
+        align-items: center; /* Center vertically */
+        justify-content: center; /* Center horizontally */
+        text-align: center; /* Center text horizontally */
+
+        /* You can add animation/transition code to all elements here */
+      }
+
+      #element1:hover{
+        background-color: rgb(175, 225, 57);
+        transition-duration: 1.5s;
+      }
+
+      #element2:active{
+        transform: translateY(120px);
+        transition-duration: 3s;
+      }
+
+
+      body {
+        background-color: #f0f0f0;
+        font-family:monospace;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+      }
+
+      @keyframes scales{
+        from{
+          transform: rotate(0deg);
+        }
+        to{
+          transform: rotate(360deg);
+        }
+      }
+      
+    </style>
+  </head>
+  <body>
+    <h1>CSS Animation Playground</h1>
+    <div class="animated-element" id="element1">Hover</div>
+
+    <div class="animated-element" id="element2">Click & Hold</div>
+
+    <div class="animated-element" id="element3">Dizzy</div>
+
+    <!-- You can add more elements here -->
+
+    <script>
+      // JavaScript for adding interactivity (if needed)
+
+      // For example: if you want to add a class when an element gets clicked, use code similar to:
+      // const elementX = document.getElementById("elementX");
+      // elementX.addEventListener("click", () => {
+      // elementX.classList.toggle("clicked"); // Adds "clicked" class if it's not there, otherwise it removes it
+      // });
+    </script>
+  </body>
+</html>
