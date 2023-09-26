@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+       
+
+        #fishy {
+            /*background-color: blue;*/
+           
+            height: 100px;
+            width: 100px;
+            offset-path:path('M9 315V207C9 179.386 31.3858 157 59 157H894.5C922.114 157 944.5 134.614 944.5 107V8');
+            animation: go 4000ms infinite ease-in-out;
+        }
+            
+        
+    
+        
+
+        #ocean {
+            background-color: aqua;
+            height:100%;
+            width: 100%;
+            position: absolute;
+            margin: 0%;
+            padding: 0%;
+        }
+
+        #test{
+            
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            margin: auto;
+            background-color: green;
+            /*animation: GFG 5s infinite linear;*/
+            offset-path: path ("M 5 5 m -4, 0 a 4,4 0 1,0 8,0 a 4,4 0 1,0 -8,0");
+            animation: go 4000ms infinite ease-in-out;
+            
+        }
+
+        @keyframes go {
+            from{
+                offset-distance: 0%;
+            }
+            to{
+                offset-distance: 100%;
+            }
+        }
+
+        @keyframes GFG {
+            0% {
+                transform: rotate(0deg) 
+                      translateY(100px) rotate(0deg);
+            }
+  
+            100% {
+                transform: rotate(360deg) 
+                      translateY(100px) rotate(-360deg);
+            }
+        }
+
+        
+        
+
+    </style>
+</head>
+<body>
+   
+        <div id="test">
+
+        </div>
+    
+    <div id="fishy">
+        <?xml version="1.0" encoding="UTF-8"?>
+        <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 465.54 275.37">
+          <defs>
+            <style>
+              .cls-1 {
+                fill: #29aae2;
+              }
+            </style>
+          </defs>
+          <path class="cls-1" d="M89.89,87.64s212.36-152.81,332.58-31.46-49.44,204.49-49.44,204.49c0,0-177.53,69.66-276.4-94.38L0,253.93,17.98,0,89.89,87.64Z"/>
+          <ellipse cx="353.93" cy="102.25" rx="17.98" ry="18.54"/>
+        </svg>
+     </div>
+  
+ 
+
+</body>
+</html>
