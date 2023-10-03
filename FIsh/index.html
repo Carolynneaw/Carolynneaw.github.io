@@ -3,46 +3,148 @@
 <head>
     <style>
        
-
-        #fishy {
-            /*background-color: blue;*/
-           
+    #shape1{
+        height:80%;
+        width:100%;
+    }
+       #fishy5{
             height: 100px;
             width: 100px;
-            offset-path: path("M.81,55.61s70.47-95.84,277.65-14.09,171.95,143.76,310.07,121.21,222.68-46.51,250.87-87.38,143.76-111.34,183.22-50.74");
-            animation: go 5s infinite ease-in-out;
-        }
-            
-        #text{
-            position: absolute;
-            text-align: center;
-            position: absolute;
-            left: 40%;
-            top: 50% 
+            height: 100px;
+            width: 100px;
+            offset-path: path("M.12,76.23s158.69,37.95,269.09,0S455.49,7.23,527.94,34.83s137.99,110.39,296.69,75.9S1155.81-47.97,1342.1,21.03s465.73,217.34,669.27,75.9");
+            animation: go 11s infinite ease-out;
+            z-index: 200;
+            animation-delay: 1s;
         }
 
-        .h1{
+       #fishy {
+            height: 100px;
+            width: 100px;
+            offset-path: path("M.31,141.84S162.46,10.75,372.9,107.34s614.07,65.55,783.11,10.35,624.42-227.69,952.15-10.35");
+            animation: go 6s infinite ease-out;
+            z-index: 200;
+        }
+
+        #fishy2{
+            height: 100px;
+            width: 100px;
+            offset-path: path("M.45,212.79S139.59-74.57,618.24,19.37c478.65,93.95,940.6-11.05,940.6-11.05");
+            animation: go 8s infinite ease-out;
+            z-index: 200;
+            animation-delay: 1s;
+        }
+
+        #fishy3{
+            height: 100px;
+            width: 100px;
+            offset-path: path("M.32,27.34S195.16,185.46,437,156.27c241.83-29.18,397.39-88.96,560.3-27.96,162.91,61,502.87-53.18,634.58-127.88");
+            animation: go 8s infinite ease-out;
+            z-index: 200;
+            animation-delay: 0.7s;
+        }
+
+        #fishy4{
+            height: 100px;
+            width: 100px;
+            offset-path: path("M.13,107.22s238.04-65.55,614.07,41.4,617.52-75.9,617.52-75.9c0,0,251.84-120.74,520.92,55.2S2218.38,.27,2218.38,.27");
+            animation: go 7s infinite ease-out;
+            z-index: 200;
+            animation-delay: 0.7s;
+        }
+
+        
+
+     
+            
+        #text{
+            text-align: center;
+            align-items: center;
+            margin-top:200px;
+            z-index: 3;
+            
+        }
+
+        
+
+        h1{
             font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            animation: colors 30s infinite ease-in-out;
+            animation-delay: 3s;
+            display: inline-block
+            
+
         }
 
         #ocean {
-            background-color: rgb(53, 103, 153);
+            /*background-color: rgb(53, 103, 153);*/
+            background-image:url(waves.jpg) ;
             height:100%;
             width: 100%;
             position: absolute;
             margin: 0%;
             padding: 0%;
+            justify-content: center;   
         }
+
+
 
         .body{
             background-color: #29aae2;
             background-size: cover;
         }
 
-        #disappear{
-            color: rgb(53, 103, 153);
+        #L{
+            animation: colors 5s infinite ease-in-out;
+            animation-delay: 0.05s;
         }
-        
+
+        #o{
+            animation: colors 5s infinite ease-in-out;
+            animation-delay: 0.06s;
+        }
+
+        #a{
+            animation: colors 5s infinite ease-in-out;
+            animation-delay: 0.07s;
+        }
+
+        #d{
+            animation: colors 5s infinite ease-in-out;
+            animation-delay: 0.08s;
+        }
+
+        #i{
+            animation: colors 5s infinite ease-in-out;
+            animation-delay: 0.08s;
+        }
+
+        #n{
+            animation: colors 5s infinite ease-in-out;
+            animation-delay: 0.1s;
+        }
+
+        #g{
+            animation: colors 5s infinite ease-in-out;
+            animation-delay: 0.11s;
+        }
+
+        #periodone{
+            animation: colors 5s infinite ease-in-out;
+            animation-delay: 0.12s;
+        }
+
+        #periodtwo{
+            animation: colors 5s infinite ease-in-out;
+            animation-delay: 0.13s;
+        }
+
+        #periodthree{
+            animation: colors 5s infinite ease-in-out;
+            animation-delay: 0.14s;
+        }
+
+    
 
         @keyframes go{
             from{
@@ -55,41 +157,150 @@
 
         @keyframes reveal{
             from{
-                
+                transform: translateX(0px);
+            }
+            to{
+                transform: translateX(500px);
             }
         }
 
-        
+        @keyframes colors{
+            0%{
+                color: rgb(27, 192, 233);
+                transform: translateY(0px);
+            }
+            50%{
+                color: yellow;
+                transform: translateY(30px);
+            }
+            75%{
+                color: yellow;
+                transform: translateY(-30px);
+            }
+            100%{
+                color: rgb(27, 192, 233);
+                transform: translateY(0px);
+                
+               
+            }
+        }
 
-        
-        
-
+    
     </style>
 </head>
 <body>
+    <div id="block1"></div>
+    <div></div>
    <div id="ocean">
-        
-        <div id="disappear">
-            <div id="text">
-            <h1> Loading... </h1>  
+    
+                <div id="text">
+                <h1 id="L"> L</h1>
+                <h1 id="o">o</h1>
+                <h1 id="a">a</h1>
+                <h1 id="d">d</h1> 
+                <h1 id="i">i</h1>
+                <h1 id="n">n</h1>
+                <h1 id="g">g</h1>
+                <h1 id="periodone">.</h1>
+                <h1 id="periodtwo">.</h1>
+                <h1 id="periodthree">.</h1>
+            
             </div>
-    </div>
 
     <div id="fishy">
+        <?xml version="1.0" encoding="utf-8"?>
+        <!-- Generator: Adobe Illustrator 26.5.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+             viewBox="0 0 1000 1000" style="enable-background:new 0 0 1000 1000;" xml:space="preserve">
+        <style type="text/css">
+            .st0{fill:#DEE21E;}
+        </style>
+        <path class="st0" d="M776.1,527.61c-54.87-7.48,2.49-44.9,2.49-44.9l114.9-32.83c-1.79-56.7-23.1-114.66-70-166.71
+            c-204.53-226.97-613.58,57.37-613.58,57.37l-89.79-219.49l-84.8,346.7l137.18-82.31c0,0,39.91,179.58,306.79,321.75
+            c177.45,94.53,361.52-23.77,404.83-180.38C852.42,529.58,807.96,531.96,776.1,527.61z"/>
+        <circle cx="617.16" cy="502.35" r="26.19"/>
+        </svg>
+     </div>
+
+     <div id="fishy2">
         <?xml version="1.0" encoding="UTF-8"?>
-        <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 465.54 275.37">
+        <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 282.03 191.47">
           <defs>
             <style>
+                .st0{fill:#29AAE2;}
               .cls-1 {
-                fill: #29aae2;
+                fill: #eeeb66;
+              }
+        
+              .cls-2 {
+                fill: #151a00;
               }
             </style>
           </defs>
-          <path class="cls-1" d="M89.89,87.64s212.36-152.81,332.58-31.46-49.44,204.49-49.44,204.49c0,0-177.53,69.66-276.4-94.38L0,253.93,17.98,0,89.89,87.64Z"/>
-          <ellipse cx="353.93" cy="102.25" rx="17.98" ry="18.54"/>
+          <path class="cls-1" d="M259.08,100.84c-1.35-4.07,17.65-7.05,22.43-7.73-1.08-10.37-3.86-21.82-8.69-34.49-51.4-134.82-216.27,5.14-216.27,5.14L12.65,3.66,0,155.09l43.1-39.14c17,77.1,100.82,75.52,100.82,75.52,0,0,138.29,1.51,138.11-88.69-4.86,.52-21.63,2.04-22.95-1.94Z"/>
+          <circle class="cls-2" cx="213.31" cy="61.19" r="8.9"/>
         </svg>
      </div>
-    </div>
+
+
+     <div id="fishy3">
+        <?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 940.65 483.98">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #dee21e;
+      }
+
+      .cls-2 {
+        fill: #151a00;
+      }
+    </style>
+  </defs>
+  <path class="cls-1" d="M854.29,276.83c-34.29-2.86,0-24.29,0-24.29l86.37-12.34c-6.1-44.89-34.37-95.68-93.51-151.95C552.86-191.74,92.86,283.98,92.86,283.98L0,102.55,1.43,483.98l104.29-122.86s240,65.71,402.86,108.57c119.5,31.45,404.38-37.87,431.32-187.63-18.87-.94-59.88-3.08-85.6-5.22Z"/>
+  <circle class="cls-2" cx="646.88" cy="213.07" r="23.97"/>
+</svg>
+     </div>
+
+     <div id="fishy4">
+        <?xml version="1.0" encoding="utf-8"?>
+        <!-- Generator: Adobe Illustrator 26.5.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+             viewBox="0 0 648 648" style="enable-background:new 0 0 648 648;" xml:space="preserve">
+        <style type="text/css">
+            .st0{fill: #dee21e;}
+        </style>
+        <path class="st0" d="M491.81,341.32c-22.61-2.74-1.37-10.28-1.37-10.28l35.77-6.28c1.94-27.17-8.88-58.4-42.84-92.68
+            c-120.22-121.35-332.58,31.46-332.58,31.46l-71.91-87.64L60.9,429.84l96.63-87.64c98.88,164.04,276.4,94.38,276.4,94.38
+            s72.13-35.35,89-93.6L491.81,341.32z"/>
+        <circle cx="429.05" cy="294.19" r="11.24"/>
+        </svg>
+     </div>
+
+     <div id="fishy5">
+        <?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 441.08 178.29">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #dee21e;;
+      }
+
+      .cls-2 {
+        fill: #231f20;
+      }
+    </style>
+  </defs>
+  <path class="cls-1" d="M382.99,122.19c-33.62-7.2,13.21-20.41,13.21-20.41l43.96-2.81c3.75-21.65-3.86-45.12-24.75-66.83C324.16-62.71,45.62,82.57,45.62,82.57L26.41,18.93,0,147.4l88.85-28.81c170.93,91.48,300.02,64.42,339.59,8.1-12.94-.09-29.45-1.07-45.44-4.49Z"/>
+  <circle class="cls-2" cx="345.78" cy="83.77" r="14.51"/>
+  <polygon class="cls-1" points="94.85 77.76 27.61 10.53 0 147.4 88.85 118.59 94.85 77.76"/>
+</svg>
+     </div>
+
+
+
+    
+   
  
 
 </body>
