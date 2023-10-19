@@ -13,18 +13,16 @@
      
      
      /////////
-     #data-02:target #shadow-02{
-        opacity:100%;
-        filter:alpha(opacity=40);
-        animation: shadow 1s ease-in; 
-      }
+     #data-02:active #shadow-02{
+        opacity: 0.3;
+    transition: all 1s linear;
+}
+     
 
       #shadow-02{
-        opacity:0 ;
-        animation: shadow-reverse 1s ease-out;
       }
 
-      #data-02:target #bar-02{
+      #data-02:active #bar-02{
         -webkit-transform: scaleX(1);
         transition-duration: 2s;
       }
@@ -33,7 +31,7 @@
         -webkit-transform: scaleX(0);      
       }
 
-      #data-02:target #arrows-02{
+      #data-02:active #arrows-02{
         -webkit-transform: scaleX(1);
         transition-duration: 2s;
         transition-delay: 0.4s;
@@ -45,17 +43,14 @@
 
       
       ///////
-      
-      #data-01:hover #shadow-01{
-        opacity:100%;
-        filter:alpha(opacity=40);
-        animation: shadow 1s ease-in; 
-      }
+    
 
-      #shadow-01{
-        opacity:0 ;
-        animation: shadow-reverse 1s ease-out;
-      }
+      #data-01:hover > #shadow-01{
+        opacity: 100%;
+    transition: all 1s linear;
+    }
+
+     
 
       #data-01:hover #bar-01{
         -webkit-transform: scaleX(1);
@@ -74,6 +69,10 @@
 
       #arrows-01{
         -webkit-transform: scaleX(0)
+      }
+
+      #shadow-01{
+        opacity:0;
       }
 
 
